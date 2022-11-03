@@ -1,4 +1,4 @@
-import imp
+from quiz_brain import QuizBrain
 from data import question_data
 from question_model import Question
 
@@ -11,4 +11,5 @@ for question in question_data:
     question_bank.append(new_question)
 
 
-print(question_bank)
+quiz = QuizBrain(question_bank)
+quiz.next_question()
